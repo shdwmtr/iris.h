@@ -1,0 +1,21 @@
+async function call() {
+    await sleep(1000);
+    print("Hello!");
+}
+
+call();
+print("Hello, World!");
+
+class Something {
+    get() {
+        return self;
+    }
+
+    hello() {
+        print("hello from Something!");
+    }
+}
+
+const something = new Something();
+const other = something.get();
+other.hello();
